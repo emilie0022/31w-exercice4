@@ -1,3 +1,26 @@
-.filtre_bouton{
-    background-color: cornflowerblue
+
+
+.filtre__bouton {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin: 20px 0;
+    justify-content: center;
+}
+
+
+.filtre__bouton button {
+    padding: 10px 20px;
+    background-color: #2a5e96; 
+    color: #fff;  
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.filtre__bouton button:hover {
+    background-color: #042a44; 
 }

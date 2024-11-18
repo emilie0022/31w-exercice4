@@ -13,20 +13,20 @@ function charger_scripts_css()
 
     wp_enqueue_style(
         "filtrepost",
-        plugin_dir_url(__FILE__) . "/style.css",
+        plugin_dir_url(__FILE__) . "style.css",
         array(),
         $version_css
     );
     wp_enqueue_script(
         "filtrepost",
-        plugin_dir_url(__FILE__) . "/js/filtrepost.js",
+        plugin_dir_url(__FILE__) . "js/filtrepost.js",
         array(),
         $version_js,
         true
     );
 }
 
-add_action("wp_enqueue_script", "charger_scripts_css");
+add_action("wp_enqueue_scripts", "charger_scripts_css");
 
 function genere_boutons(){
     $categories = get_categories();
